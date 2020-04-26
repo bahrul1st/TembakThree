@@ -9,11 +9,11 @@ include 'Arul420.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Masukkan No Telepon : ";
+echo "Nimer hape llu Sini Coy : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
-echo "Masukkan OTP : ";
+echo "Noh Anak Buah Gw ngirim OTP Masukin Sini Cepet :v : ";
 $otp = trim(fgets(STDIN));
 $login = $tri->login($msisdn,$otp);
 $login = json_decode($login,true);
