@@ -9,7 +9,7 @@ include 'Arul420.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Nimer hape llu Sini Coy : ";
+echo "Nomer hape llu Taro Sini Coy : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
